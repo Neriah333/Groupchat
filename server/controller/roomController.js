@@ -1,12 +1,12 @@
 const Room = require("../models/Room");
 
 
-exports.getRooms = aync (req, res)=> {
+exports.getRooms = async (req, res) => {
   const rooms = await Room.find();
   res.json(rooms);
 };
 
-exports.createRoom = async (req, res)=> {
+exports.createRoom = async (req, res) => {
   const { name } = req.body;
   try {
     const room = await Room.create({ name });

@@ -1,4 +1,4 @@
-const Message = require("../models/Message");
+const Message = require("../models/Messages");
 
 exports.getRoomMessages = async (req, res)=> {
   const messages = await Message.find({ room: req.params.roomid })

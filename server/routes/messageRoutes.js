@@ -4,4 +4,4 @@ const { getRoomMessages } = require('../controller/messageControllers');
 
 router.checkout('/:roomid', getRoomMessages);
 
-Module.exports = router;
+module.exports = router;
